@@ -1,33 +1,38 @@
 class Book {
+  #nombre
+  #autor
+  #precio
+
   constructor(nombre, autor, precio) {
-    this.nombre = nombre;
-    this.autor = autor;
-    this.precio = precio;
+    this.#nombre = nombre;
+    this.#autor = autor;
+    this.#precio = precio;
   }
 
-  get Nombre() {
-    return this.nombre;
+  get nombre() {
+    return this.#nombre;
   }
 
-  set Nombre(nombre) {
-    this.nombre = nombre;
+  set nombre(new_nombre) {
+    this.#nombre = new_nombre;
   }
 
-  get Autor() {
-    return this.autor;
+  get autor() {
+    return this.#autor;
   }
 
-  set Autor(autor) {
-    this.autor = autor;
+  set autor(new_autor) {
+    this.#autor = new_autor;
   }
 
-  get Precio() {
-    return this.precio;
+  get precio() {
+    return this.#precio;
   }
 
-  set Precio(precio) {
-    this.precio = precio;
+  set precio(new_precio) {
+    this.#precio = new_precio;
   }
+
 }
 
 //herencia
