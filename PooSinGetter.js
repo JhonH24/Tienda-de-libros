@@ -17,4 +17,4 @@ class Booka {
 
 //instanciar
 const book2 = new Booka("Caballos desbocados", "Yukio M", 250.00);
-console.log(book2.get_info())
+book2.get_info() //para quitar el undefined no usar console
